@@ -15,7 +15,7 @@ timezone: ''
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://huxfy.github.io
 root: /blog/
-permalink: :year/:month/:day/:title/
+permalink: :category/:title/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -99,3 +99,26 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: ''
+
+avatar: /uploads/avatar.jpg
+
+menu:
+  home: /
+  archives: /archives
+  tags: /tags
+  categories: /categories
+
+# Social links
+social:
+  GitHub: https://github.com/huxfy
+
+social_icons:
+  enable: true
+  # Icon Mappings.
+  # KeyMapsToSocalItemKey: NameOfTheIconFromFontAwesome
+  GitHub: github
+
+disqus_shortname: your-disqus-shortname
+
+baidu_analytics: ec3852198bbe1489e9a4f05f3f65bcfb
+ 
