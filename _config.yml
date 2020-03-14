@@ -129,3 +129,5 @@ sitemap:
     path: sitemap.xml
     template: ./sitemap_template.xml
     rel: false
+
+google_site_verification: WuT2V5tesSTMmkLGiVDTzgO5e3sitjEAar5Gi5EwPDc
