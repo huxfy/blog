@@ -13,7 +13,7 @@ timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://huxfy.github.io
+url: https://huxfy.github.io/blog
 root: /blog/
 permalink: :category/:title/
 permalink_defaults:
@@ -90,10 +90,8 @@ include:
 exclude:
 ignore:
 
-# Extensions
-## Plugins: https://hexo.io/plugins/
-## Themes: https://hexo.io/themes/
-theme: next
+
+
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -102,28 +100,14 @@ deploy:
 
 avatar: /uploads/avatar.jpg
 
-menu:
-  home: /
-  archives: /archives
-  tags: /tags
-  categories: /categories
 
-# Social links
-social:
-  GitHub: https://github.com/huxfy
-
-social_icons:
-  enable: true
-  # Icon Mappings.
-  # KeyMapsToSocalItemKey: NameOfTheIconFromFontAwesome
-  GitHub: github
 
 disqus_shortname: your-disqus-shortname
 
 # 百度统计数据 https://tongji.baidu.com/web/30088885/trend/latest?siteId=14770690
 baidu_analytics: ec3852198bbe1489e9a4f05f3f65bcfb
 
-swiftype_key: MARVmPgkiNDmqT8ykjXC
+# swiftype_key: 24wzNJ9tsXjYQ3w-nx9F
  
 sitemap:
     path: sitemap.xml
@@ -132,3 +116,43 @@ sitemap:
 
 # 谷歌搜索数据 https://search.google.com/search-console?resource_id=https%3A%2F%2Fhuxfy.github.io%2Fblog%2F
 google_site_verification: WuT2V5tesSTMmkLGiVDTzgO5e3sitjEAar5Gi5EwPDc
+
+since: 2020
+
+# creative_commons: by-nc-sa
+
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: next
+theme_config:
+  # Social links
+  social:
+    GitHub: https://github.com/huxfy
+    # E-Mail: https://fengyuan.hx@gmail.com
+
+  social_icons:
+    enable: true
+    # Icon Mappings.
+    # KeyMapsToSocalItemKey: NameOfTheIconFromFontAwesome
+    GitHub: github
+
+  # Schemes
+  # scheme: Muse
+  # scheme: Mist
+  scheme: Pisces
+  # scheme: Gemini
+  menu:
+    home: /
+    categories: /categories/
+    #about: /about/
+    archives: /archives/
+    tags: /tags/
+    # sitemap: /sitemap.xml
+    #commonweal: /404/
+    
+  post_copyright:
+    enable: true
+    license: CC BY-NC-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
