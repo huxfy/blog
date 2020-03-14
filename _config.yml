@@ -120,14 +120,15 @@ social_icons:
 
 disqus_shortname: your-disqus-shortname
 
-# https://tongji.baidu.com/web/30088885/trend/latest?siteId=14770690
+# 百度统计数据 https://tongji.baidu.com/web/30088885/trend/latest?siteId=14770690
 baidu_analytics: ec3852198bbe1489e9a4f05f3f65bcfb
 
-# swiftype_key: xjSFMAy3weGqyuAsB7Tz
+swiftype_key: MARVmPgkiNDmqT8ykjXC
  
 sitemap:
     path: sitemap.xml
     template: ./sitemap_template.xml
     rel: false
 
+# 谷歌搜索数据 https://search.google.com/search-console?resource_id=https%3A%2F%2Fhuxfy.github.io%2Fblog%2F
 google_site_verification: WuT2V5tesSTMmkLGiVDTzgO5e3sitjEAar5Gi5EwPDc
