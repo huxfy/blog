@@ -120,5 +120,12 @@ social_icons:
 
 disqus_shortname: your-disqus-shortname
 
+# https://tongji.baidu.com/web/30088885/trend/latest?siteId=14770690
 baidu_analytics: ec3852198bbe1489e9a4f05f3f65bcfb
+
+# swiftype_key: xjSFMAy3weGqyuAsB7Tz
  
+sitemap:
+    path: sitemap.xml
+    template: ./sitemap_template.xml
+    rel: false
