@@ -1,6 +1,6 @@
 ---
 title: Building with Web Components
-date: 2020-03-14 21:58:32
+date: 2020-03-15 21:41:00
 tags:
 - front-end
 - lwc
