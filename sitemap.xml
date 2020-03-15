@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.huxfy.cc/trans/Building-with-Web-Components/</loc>
+    
+    <lastmod>2020-03-15T13:41:54.744Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.huxfy.cc/think/why-built-blog/</loc>
     
     <lastmod>2020-03-14T12:35:02.037Z</lastmod>
@@ -9,14 +16,14 @@
   </url>
   
   <url>
-    <loc>https://blog.huxfy.cc/categories/index.html</loc>
+    <loc>https://blog.huxfy.cc/tags/index.html</loc>
     
     <lastmod>2020-03-14T08:30:32.076Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://blog.huxfy.cc/tags/index.html</loc>
+    <loc>https://blog.huxfy.cc/categories/index.html</loc>
     
     <lastmod>2020-03-14T08:30:32.076Z</lastmod>
     
