@@ -105,7 +105,7 @@ avatar: /uploads/avatar.jpg
 disqus_shortname: your-disqus-shortname
 
 # 百度统计数据 https://tongji.baidu.com/web/30088885/trend/latest?siteId=14770690
-baidu_analytics: ec3852198bbe1489e9a4f05f3f65bcfb
+baidu_analytics: 230d1807d919a87d0128b0c07b0da96c
 
 # swiftype_key: 24wzNJ9tsXjYQ3w-nx9F
  
@@ -114,7 +114,7 @@ sitemap:
     template: ./sitemap_template.xml
     rel: false
 
-# 谷歌搜索数据 https://search.google.com/search-console?resource_id=https%3A%2F%2Fhuxfy.github.io%2Fblog%2F
+# 谷歌搜索数据 https://search.google.com/search-console?action=inspect&utm_medium=referral&utm_campaign=9012289&resource_id=sc-domain:huxfy.cc
 google_site_verification: WuT2V5tesSTMmkLGiVDTzgO5e3sitjEAar5Gi5EwPDc
 
 since: 2020
