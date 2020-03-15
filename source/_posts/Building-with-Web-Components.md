@@ -24,7 +24,7 @@ categories:
 
 > In the early years of web development, there were three standard fundamentals upon which every website was built: HTML, CSS, and JavaScript. As time passed, web developers became more proficient in their construction of fancy UI/UX widgets for websites. With the need for newer ways of crafting a site coming in conflict with the relatively slow adoption of newer standards, more and more developers began to build their own libraries to abstract away some of the technical details. The web ceased being a standard: now your website could be a React site, or an Angular site, or a Vue site, or any number of other web framework that are not interoperable with each other.
 
-对于开发web前端，在更早些年所有的 web 站点都是基于三个标准的基本原理来搭建：HTML、CSS 和 JavaScript，随着时间推移，web 开发者越来越精通于为网站开发一些炫酷的 UI/UX 组件，新的标准采纳相对较慢，其与用新方式制作网站的诉求出现了冲突，越来越多的开发者开始开发他们自己的库去抽象一些技术细节，web 开发不再是一套标准：现在你的网站可以是 React 网站、Angular 网站、Vue 网站，或其他任何 **不能互相兼容交互（ interoperable，相关问题可扩展阅读：[Web Components: Seamlessly interoperable](https://medium.com/@sergicontre/web-components-seamlessly-interoperable-82efd6989ca4) ）** 的 web 框架。
+在早几年前开发 web ，所有的 web 站点都是基于三个标准的基本原理来搭建：HTML、CSS 和 JavaScript，随着时间推移，web 开发者越来越精通于为网站开发一些炫酷的 UI/UX 组件，新的标准采纳相对较慢，这与用新方式制作网站的诉求出现了冲突，越来越多的开发者开始开发他们自己的库去抽象一些技术细节，web 开发不再是一套标准：现在你的网站的框架可以是 React 、Vue ，或其他任何 **不能互相兼容交互（ interoperable，相关问题可扩展阅读：[Web Components: Seamlessly interoperable](https://medium.com/@sergicontre/web-components-seamlessly-interoperable-82efd6989ca4) ）** 的 web 框架。
 
 >Web components seek to tilt the balance of web development back towards a standard agreed upon by browser vendors and developers. Various polyfills and proprietary frameworks have achieved what web components are now trying to standardize: composable units of JavaScript and HTML that can be imported and reused across web applications. Let's explore the history of web components and the advantages they provide over third-party libraries.
 
@@ -34,7 +34,7 @@ categories:
 
 >After some attempts by browser vendors to create a standard—and subsequent slow progress—front-end developers realized it was up to them to create a browser-agnostic library delivering on the promise of the web components vision. When React was released, it completely changed the paradigm of web development in two key ways. First, with a bit of JavaScript and some XML-like syntax, React allowed you to compose custom HTML tags it called components:
 
-浏览器供应商们尝试建立一套标准，在许多次的尝试之后 - 同时伴随着缓慢的进展 - 前端开发者们意识到，想要实现 web components 的愿景，其实是要靠他们自己去创建一个与浏览器完全无关的库。当 React 被发布时，它在两个关键点上完全的改变了 web 开发的模式。首先，React 允许你构造名叫 components 的自定义 HTML 标签，只需要使用一点 JavaScript 和一些类似 XML 的语法：
+浏览器供应商们尝试建立一套标准，在许多次的尝试之后 - 同时伴随着缓慢的进展 - 前端开发者们意识到，想要实现 web components 的愿景，其实还是要靠他们自己去创建一个与浏览器完全无关的库。当 React 被发布时，它在两个关键点上完全的改变了 web 开发的模式。首先，React 允许你构造名叫 components 的自定义 HTML 标签，只需要使用几行 JavaScript 和一些类似 XML 的语法：
 
 ```javascript
 class HelloMessage extends React.Component {
@@ -63,7 +63,7 @@ React components 能够跨应用复用，同时共享给其他的开发者们，
 
 >Around 2015, Google began developing the Polymer Project as a means of demonstrating how they wanted web standards to evolve through polyfills. Over the years and various releases, the ideas presented by Polymer library began to be incorporated by the W3C for standardization and browser adoption. The work started back in 2012 by the W3C (and originally introduced by Alex Russell at Fronteers Conference 2011) began to get more attention, undergoing various design changes to address developers' concerns.
 
-在2015年，谷歌开始开发 [the Polymer Project](https://www.polymer-project.org/) ，以这个项目展示他们是如何通过 polyfill 来使得 web 标准得以发展。在过去几年的各种发布中，Polymer 库带来的许多想法已经开始被 W3C 纳入到标准化中，同时也被浏览器采用接受。这个事情起始于 2012 年，由 [W3C 发起](https://www.w3.org/TR/2012/WD-components-intro-20120522/)（ 最初是由 Alex Russell 在 [2011 前端开发者大会](https://www.w3.org/TR/2012/WD-components-intro-20120522/) 提出 ），已经开始获得越来越多的关注，同时经历了各种设计改版来解决开发者们的问题。
+在2015年，谷歌开始开发 [the Polymer Project](https://www.polymer-project.org/) ，以这个项目展示他们是如何通过 polyfill 来使得 web 标准得以发展。在过去几年的各种发布中，Polymer 库带来的许多想法已经开始被 W3C 纳入到标准化中，同时也被各浏览器所采纳。 web component 起始于 2012 年，由 [W3C 发起](https://www.w3.org/TR/2012/WD-components-intro-20120522/)（ 最初是由 Alex Russell 在 [2011 前端开发者大会](https://www.w3.org/TR/2012/WD-components-intro-20120522/) 提出 ），已经获得了越来越多的关注，同时也经历了各种设计改版以解决开发者们的问题。
 
 ## web components 的工具集
 
@@ -95,13 +95,13 @@ customElements.define('say-hello', SayHello);
 
 >Custom elements can be used to encapsulate logic across your site and reused wherever necessary. Since they're a web standard, you won't need to load an additional JavaScript framework to support them.
 
-自定义元素可以用来封装整个网站的逻辑，并且在任何需要的地方被复用。自从它们成为了 web 标准之后，你已经不需要加载额外的 JavaScript 框架来支持这个特性。
+自定义元素可以用来封装整个网站的逻辑，并且被复用到任何需要的地方。自从它们成为了 web 标准之后，你已经不需要加载额外的 JavaScript 框架来支持这个特性。
 
 ### HTML 模板特性
 
 >If you need to reuse markup on a website, it can be helpful to make use of an HTML template. HTML templates are ignored by the browser until they are called upon to be rendered. Thus, you can create complicated blocks of HTML and render them instantaneously via JavaScript.
 
-如果你需要在一个网站反复的使用一些标签片段，利用 [HTML 模板特性](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_templates_and_slots) 会帮助你做到这一点，HTML 模板会被浏览器忽视，直到它们被调用，即将被渲染的时候。这样一来，你就可以开发一些复杂的 HTML 片段，并且通过 JavaScript 来瞬间渲染它们。
+如果你需要在一个网站反复的使用一些标签片段，利用 [HTML 模板特性](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_templates_and_slots) 会帮助你做到这一点，HTML 模板会被浏览器忽视，直到它们被调用到，即将被渲染的时候。这样一来，你就可以开发一些复杂的 HTML 片段，并且通过 JavaScript 代码调用来瞬间渲染它们。
 
 >To create an HTML template, all you need to do is wrap up your HTML with the new `<template>` tag:
 
@@ -130,7 +130,7 @@ customElements.define('say-hello', SayHello);
 
 >The shadow DOM is another concept which provides support for further web page encapsulation. Any elements within the shadow DOM are not affected by the CSS styles of any other markup on the page, and similarly, any CSS defined within the shadow DOM doesn't affect other elements. They can also be configured to not be affected by external JavaScript, either. Among other advantages, this results in lower memory usage for the browser and faster render times. If it's helpful, you can think of elements in the shadow DOM as more secure iframes.
 
-[影子 DOM 特性](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM) 是另一个提供能力支持去进一步封装 web 页面的概念。影子 DOM 里面的任何元素都不会受到页面中其他标签的 CSS 样式影响，并且同样的，任何在影子 DOM 中定义的 CSS 也不会影响外面的其他元素。它们也能被配置，从而不被外部 JavaScript 所影响。至于其他的好处就是，它会降低浏览器的内存使用率，同时提升渲染速度。如果换一种理解有帮助的话，你可以把影子 DOM 里面的元素想成是更加安全的 `iframe`。
+[影子 DOM 特性](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM) 是另一个提供能力支持去进一步封装 web 页面的概念。影子 DOM 里面的任何元素都不会受到页面中其他标签的 CSS 样式影响，并且同样的，任何在影子 DOM 中定义的 CSS 也不会影响外面的其他元素。它们也能通过被配置，从而不被外部 JavaScript 所影响。至于其他的好处就是，它会降低浏览器的内存使用率，同时提升渲染速度。如果换一种理解有帮助的话，你可以把影子 DOM 里面的元素想成是更加安全的 `iframe`。
 
 >To add an element to the shadow DOM, you call attachShadow() on it:
 
@@ -160,7 +160,7 @@ window.customElements.define("my-web-component", MyWebComponent);
 
 >The greatest advantage web components have over using a library is their ability to provide standards-compliant, composable HTML elements. What this means is that if you have built a web component, you can package it up as a release for other developers to consume as a dependency in their project, just like any other Node or Ruby package, and those developers can be assured that that web component will work across all (well, most) web browsers without requiring the browser to load a front-end framework like React, Angular, or Vue.
 
-与使用一个库相比，web component 的最大优点是它们有能力提供符合标准化的，可被自由组合的 HTML 元素。这意味着如果你已经开发了一个 web component，你可以把它打包成发行版，给其他的开发者在他们项目中作为一个依赖来使用，就像其他那些 Node 或 Ruby 包一样，同时那些开发者们能够得到保证，在不通过浏览器加载一些前段框架，类似 React ， Angular ，或者 Vue的情况下，那些 web component 将跨越所有（几乎大部分） web 浏览器正常工作。
+与使用一个库相比，web component 的最大优点是它们有能力提供符合标准化的，可被自由组合的 HTML 元素。这意味着如果你已经开发了一个 web component，你可以把它打包成发行版，给其他的开发者在他们项目中作为一个依赖来使用，就像其他那些 Node 或 Ruby 包一样，同时那些开发者们能够得到保证，在不通过浏览器加载一些前端框架，类似 React ， Angular ，或者 Vue的情况下，那些 web component 将跨越所有（几乎大部分） web 浏览器正常工作。
 
 >To give an example, Shader Doodle is a custom element which sets up the ability to easily create fragment shaders. Developers who need this functionality can just fetch the package and insert it as a <shader-doodle> tag in their HTML, rather than creating the functionality of Share Doodle from scratch.
 
@@ -182,7 +182,7 @@ window.customElements.define("my-web-component", MyWebComponent);
 
 >You can also join the Polymer Slack workspace to chat with other web developers about working with these standards.
 
-你也可以加入 [Polymer Stack 工作空间](https://polymer.slack.com/messages/general/) ，于其他开发者们聊聊通过这些标准开发的体验。
+你也可以加入 [Polymer Stack 工作空间](https://polymer.slack.com/messages/general/) ，与其他开发者们聊聊通过这些标准开发的体验。
 
 ---
 
