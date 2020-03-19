@@ -105,7 +105,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://blog.huxfy.cc/uploads/web-component/customElements-2020-03-15.png">
 <meta property="article:published_time" content="2020-03-15T21:41:00.000Z">
-<meta property="article:modified_time" content="2020-03-15T16:05:51.925Z">
+<meta property="article:modified_time" content="2020-03-19T23:35:00.000Z">
 <meta property="article:author" content="huxfy">
 <meta property="article:tag" content="front-end">
 <meta property="article:tag" content="lwc">
@@ -327,7 +327,19 @@
             
 
             
+              <span class="post-meta-divider">|</span>
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Post modified</span>
+              
+              <time title="Post modified" itemprop="dateModified" datetime="2020-03-19T23:35:00+00:00">
+                2020-03-19
+              </time>
             
           </span>
 
@@ -394,7 +406,7 @@
 <blockquote>
 <p>Web components seek to tilt the balance of web development back towards a standard agreed upon by browser vendors and developers. Various polyfills and proprietary frameworks have achieved what web components are now trying to standardize: composable units of JavaScript and HTML that can be imported and reused across web applications. Let’s explore the history of web components and the advantages they provide over third-party libraries.</p>
 </blockquote>
-<p>针对 web 开发，web components 试图将重点放到浏览器供应商和web开发者共同制定的标准上来。其实现在的各种 polyfill 和 <strong>专有框架（ proprietary，相关问题可扩展阅读：<a href="https://baike.baidu.com/item/%E4%B8%93%E6%9C%89%E8%BD%AF%E4%BB%B6/5395294?fr=aladdin" target="_blank" rel="noopener">专有软件</a> ）</strong> 已经做到了目前 web component 努力去标准化的东西：通过 JavaScript 和 HTML 组合出来的基础单元，能够被跨应用的引入和复用。让我们研究下 web component 的历史和它相比于三方库，能提供的优势是什么。</p>
+<p>针对 web 开发，web components 试图将重点放到浏览器供应商和web开发者共同制定的标准上来。其实现在的各种 polyfill 和 <strong>专有框架（ proprietary，相关问题可扩展阅读：<a href="https://baike.baidu.com/item/%E4%B8%93%E6%9C%89%E8%BD%AF%E4%BB%B6/5395294?fr=aladdin" target="_blank" rel="noopener">专有软件</a> ）</strong> 已经做到了目前 web components 努力去标准化的东西：通过 JavaScript 和 HTML 组合出来的基础单元，能够被跨应用的引入和复用。让我们研究下 web components 的历史和它相比于三方库，能提供的优势是什么。</p>
 <h2 id="web-components-的概念是怎么开始的"><a href="#web-components-的概念是怎么开始的" class="headerlink" title="web components 的概念是怎么开始的"></a>web components 的概念是怎么开始的</h2><blockquote>
 <p>After some attempts by browser vendors to create a standard—and subsequent slow progress—front-end developers realized it was up to them to create a browser-agnostic library delivering on the promise of the web components vision. When React was released, it completely changed the paradigm of web development in two key ways. First, with a bit of JavaScript and some XML-like syntax, React allowed you to compose custom HTML tags it called components:</p>
 </blockquote>
@@ -412,7 +424,7 @@
 <blockquote>
 <p>Around 2015, Google began developing the Polymer Project as a means of demonstrating how they wanted web standards to evolve through polyfills. Over the years and various releases, the ideas presented by Polymer library began to be incorporated by the W3C for standardization and browser adoption. The work started back in 2012 by the W3C (and originally introduced by Alex Russell at Fronteers Conference 2011) began to get more attention, undergoing various design changes to address developers’ concerns.</p>
 </blockquote>
-<p>在2015年，谷歌开始开发 <a href="https://www.polymer-project.org/" target="_blank" rel="noopener">the Polymer Project</a> ，以这个项目展示他们是如何通过 polyfill 来使得 web 标准得以发展。在过去几年的各种发布中，Polymer 库带来的许多想法已经开始被 W3C 纳入到标准化中，同时也被各浏览器所采纳。 web component 起始于 2012 年，由 <a href="https://www.w3.org/TR/2012/WD-components-intro-20120522/" target="_blank" rel="noopener">W3C 发起</a>（ 最初是由 Alex Russell 在 <a href="https://www.w3.org/TR/2012/WD-components-intro-20120522/" target="_blank" rel="noopener">2011 前端开发者大会</a> 提出 ），已经获得了越来越多的关注，同时也经历了各种设计改版以解决开发者们的问题。</p>
+<p>在2015年，谷歌开始开发 <a href="https://www.polymer-project.org/" target="_blank" rel="noopener">the Polymer Project</a> ，以这个项目展示他们是如何通过 polyfill 来使得 web 标准得以发展。在过去几年的各种发布中，Polymer 库带来的许多想法已经开始被 W3C 纳入到标准化中，同时也被各浏览器所采纳。 web components 起始于 2012 年，由 <a href="https://www.w3.org/TR/2012/WD-components-intro-20120522/" target="_blank" rel="noopener">W3C 发起</a>（ 最初是由 Alex Russell 在 <a href="https://www.w3.org/TR/2012/WD-components-intro-20120522/" target="_blank" rel="noopener">2011 前端开发者大会</a> 提出 ），已经获得了越来越多的关注，同时也经历了各种设计改版以解决开发者们的问题。</p>
 <h2 id="web-components-的工具集"><a href="#web-components-的工具集" class="headerlink" title="web components 的工具集"></a>web components 的工具集</h2><blockquote>
 <p>Let’s take a look at the web standards which make up web components today.</p>
 </blockquote>
@@ -451,10 +463,10 @@
 <p>This creates a custom element, <my-web-component>, whose p tag would not be affected by any other styles on the page.</p>
 </blockquote>
 <p>这里创建了一个自定义元素， <code>&lt;my-web-component&gt;</code> ，它的 <code>p</code> 标签将不会被页面中的其他任何样式所影响。</p>
-<h2 id="Web-component-生态"><a href="#Web-component-生态" class="headerlink" title="Web component 生态"></a>Web component 生态</h2><blockquote>
-<p>The greatest advantage web components have over using a library is their ability to provide standards-compliant, composable HTML elements. What this means is that if you have built a web component, you can package it up as a release for other developers to consume as a dependency in their project, just like any other Node or Ruby package, and those developers can be assured that that web component will work across all (well, most) web browsers without requiring the browser to load a front-end framework like React, Angular, or Vue.</p>
+<h2 id="Web-components-生态"><a href="#Web-components-生态" class="headerlink" title="Web components 生态"></a>Web components 生态</h2><blockquote>
+<p>The greatest advantage web components have over using a library is their ability to provide standards-compliant, composable HTML elements. What this means is that if you have built a web components, you can package it up as a release for other developers to consume as a dependency in their project, just like any other Node or Ruby package, and those developers can be assured that that web components will work across all (well, most) web browsers without requiring the browser to load a front-end framework like React, Angular, or Vue.</p>
 </blockquote>
-<p>与使用一个库相比，web component 的最大优点是它们有能力提供符合标准化的，可被自由组合的 HTML 元素。这意味着如果你已经开发了一个 web component，你可以把它打包成发行版，给其他的开发者在他们项目中作为一个依赖来使用，就像其他那些 Node 或 Ruby 包一样，同时那些开发者们能够得到保证，在不通过浏览器加载一些前端框架，类似 React ， Angular ，或者 Vue的情况下，那些 web component 将跨越所有（几乎大部分） web 浏览器正常工作。</p>
+<p>与使用一个库相比，web component 的最大优点是它们有能力提供符合标准化的，可被自由组合的 HTML 元素。这意味着如果你已经开发了一个 web component，你可以把它打包成发行版，给其他的开发者在他们项目中作为一个依赖来使用，就像其他那些 Node 或 Ruby 包一样，同时那些开发者们能够得到保证，在不通过浏览器加载一些前端框架，类似 React ， Angular ，或者 Vue的情况下，那些 web components 将跨越所有（几乎大部分） web 浏览器正常工作。</p>
 <blockquote>
 <p>To give an example, Shader Doodle is a custom element which sets up the ability to easily create fragment shaders. Developers who need this functionality can just fetch the package and insert it as a <shader-doodle> tag in their HTML, rather than creating the functionality of Share Doodle from scratch.</p>
 </blockquote>
@@ -462,27 +474,30 @@
 <blockquote>
 <p>Now, with the great interoperability that web components give you, many frameworks and libraries like Vue or React have started to provide the option to generate web components out of their proprietary code. That way you don’t have to learn all the low-level APIs of the aforementioned standards, and can instead focus on coding. There many other libraries for creating web components, like Polymer , X-Tag , slim.js , Riot.js , and Stencil.</p>
 </blockquote>
-<p>由于 web component 给你的强大的互相兼容性，现在许多的框架和库，像 Vue 或 React 已经开始提供 option ，通过它们自己的专有代码来生成 web components。通过这类生成的方式，你就没必要去学习前面提到的那些标准所提供的低级 API，从而专注于开发编码。这里有许多其他的库来生成 web component ，像 <a href="https://github.com/polymer" target="_blank" rel="noopener">Polymer</a> ，<a href="https://github.com/x-tag/core" target="_blank" rel="noopener">X-Tag</a> , <a href="https://github.com/slimjs/slim.js" target="_blank" rel="noopener">slim.js</a> , <a href="https://github.com/riot/riot" target="_blank" rel="noopener">Riot.js</a> , 和 <a href="https://github.com/ionic-team/stencil" target="_blank" rel="noopener">Stencil</a> 。</p>
+<p>由于 web components 给你的强大的互相兼容性，现在许多的框架和库，像 Vue 或 React 已经开始提供 option ，通过它们自己的专有代码来生成 web components。通过这类生成的方式，你就没必要去学习前面提到的那些标准所提供的低级 API，从而专注于开发编码。这里有许多其他的库来生成 web components ，像 <a href="https://github.com/polymer" target="_blank" rel="noopener">Polymer</a> ，<a href="https://github.com/x-tag/core" target="_blank" rel="noopener">X-Tag</a> , <a href="https://github.com/slimjs/slim.js" target="_blank" rel="noopener">slim.js</a> , <a href="https://github.com/riot/riot" target="_blank" rel="noopener">Riot.js</a> , 和 <a href="https://github.com/ionic-team/stencil" target="_blank" rel="noopener">Stencil</a> 。</p>
 <blockquote>
 <p>Another great example of this are Salesforce’s Lightning Web Components, a lightweight framework that abstracts away the complexity of the different web standards. It provides a standards-compliant foundation for building web components which can be used in any project.</p>
 </blockquote>
-<p>针对于 web component ，另外一个非常好的例子是 Salesforce 的 <a href="https://lwc.dev/" target="_blank" rel="noopener">Lightning Web Components</a> ， 一个轻量级框架，对不同 web 标准的复杂性进行了抽象。它提供了一套符合 web 标准的基础能力，能够通过它去开发 web component，从而使用到任何项目中。</p>
-<h2 id="获得更多相关的-web-component"><a href="#获得更多相关的-web-component" class="headerlink" title="获得更多相关的 web component"></a>获得更多相关的 web component</h2><blockquote>
+<p>针对于 web components ，另外一个非常好的例子是 Salesforce 的 <a href="https://lwc.dev/" target="_blank" rel="noopener">Lightning Web Components</a> ， 一个轻量级框架，对不同 web 标准的复杂性进行了抽象。它提供了一套符合 web 标准的基础能力，能够通过它去开发 web component，从而使用到任何项目中。</p>
+<h2 id="获得更多相关的-web-components"><a href="#获得更多相关的-web-components" class="headerlink" title="获得更多相关的 web components"></a>获得更多相关的 web components</h2><blockquote>
 <p>We recorded an episode of Code[ish], our podcast on all things tech, that meticulously went through the history (and future!) of web components. Be sure to check out that interview from someone who literally wrote the book on web components.</p>
 </blockquote>
-<p>我们录制了一段 Code[ish] 片段，我们的博客里面有所有的技术相关事情，它细致入微（ 这个词感觉比较符合语境 ）的经历了 web component 的历史（ 和未来！ ）。一定要听听那次对于 <a href="https://www.heroku.com/podcasts/codeish/38-building-with-web-components" target="_blank" rel="noopener">Ben Farrell （ 我直接找了这个人的名字 ） 的访谈</a>，他真的写了一本 <a href="https://www.manning.com/books/web-components-in-action" target="_blank" rel="noopener">关于 web component 的书</a>。</p>
+<p>我们录制了一段 Code[ish] 片段，我们的博客里面有所有的技术相关事情，它细致入微（ 这个词感觉比较符合语境 ）的经历了 web components 的历史（ 和未来！ ）。一定要听听那次对于 <a href="https://www.heroku.com/podcasts/codeish/38-building-with-web-components" target="_blank" rel="noopener">Ben Farrell （ 我直接找了这个人的名字 ） 的访谈</a>，他真的写了一本 <a href="https://www.manning.com/books/web-components-in-action" target="_blank" rel="noopener">关于 web components 的书</a>。</p>
 <blockquote>
 <p>You can also join the Polymer Slack workspace to chat with other web developers about working with these standards.</p>
 </blockquote>
 <p>你也可以加入 <a href="https://polymer.slack.com/messages/general/" target="_blank" rel="noopener">Polymer Stack 工作空间</a> ，与其他开发者们聊聊通过这些标准开发的体验。</p>
 <hr>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>web component 于 2011 年被 Alex Russell 提出，2012 年 W3C 开始正式发起 <a href="https://www.w3.org/TR/2012/WD-components-intro-20120522/" target="_blank" rel="noopener">草案</a>，2014年正式纳入 <a href="https://www.w3.org/TR/components-intro/" target="_blank" rel="noopener">标准</a>，后逐渐被浏览器所支持，其中谷歌 2015 年开始的 Polymer Project 项目，通过 polyfill 来临时支持浏览器兼容，起了很大的推进作用。 React 在 2013 年 3 月推出，也算应运而生。</p>
-<p>web component 解决的是一个跨应用、跨浏览器、跨框架复用的问题，也是文中多次提到的 interoperable ，这是一个比较常见的问题，比如 React 组件想用到 Vue 框架的应用里面。web component 从根本上解决了问题，也就是推进标准化，让浏览器去支持，从而达到脱库的地步。</p>
-<p>web component 通过三种方式的 API 来实现组件的封装：HTML Templates、Custom elements，和 Shadow DOM。 HTML 模板负责封装ui片段、Custom elements 耦合 JavaScript，而 Shadow DOM 用来保持 UI 的独立性，不至于污染全局样式，以及被影响。</p>
-<p>目前的主流框架（ React、Vue 等 ）开始支持生成 Web Component，同时也有一些基于 web component 的库和框架诞生。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>web components 于 2011 年被 Alex Russell 提出，2012 年 W3C 开始正式发起 <a href="https://www.w3.org/TR/2012/WD-components-intro-20120522/" target="_blank" rel="noopener">草案</a>，2014年正式纳入 <a href="https://www.w3.org/TR/components-intro/" target="_blank" rel="noopener">标准</a>，后逐渐被浏览器所支持，其中谷歌 2015 年开始的 Polymer Project 项目，通过 polyfill 来临时支持浏览器兼容，起了很大的推进作用。 React 在 2013 年 3 月推出，也算应运而生。</p>
+<p>web components 解决的是一个跨应用、跨浏览器、跨框架复用的问题，也是文中多次提到的 interoperable ，这是一个比较常见的问题，比如 React 组件想用到 Vue 框架的应用里面。web component 从根本上解决了问题，也就是推进标准化，让浏览器去支持，从而达到脱库的地步。</p>
+<p>web components 通过三种方式的 API 来实现组件的封装：HTML Templates、Custom elements，和 Shadow DOM。 HTML 模板负责封装ui片段、Custom elements 耦合 JavaScript，而 Shadow DOM 用来保持 UI 的独立性，不至于污染全局样式，以及被影响。</p>
+<p>目前的主流框架（ React、Vue 等 ）开始支持生成 Web Component，同时也有一些基于 web components 的库和框架诞生。</p>
 <img src="/uploads/web-component/customElements-2020-03-15.png" class="[class names]" title="customElements compatibility till 2020-03-15" alt="customElements compatibility till 2020-03-15">
 
-<p>目前（ 2020-03-15 ） web component 的兼容性方面，除 IE 外，其他主流浏览器已全部兼容。</p>
+<p>目前（ 2020-03-15 ） web components 的兼容性方面，除 IE 外，其他主流浏览器已全部兼容，具体示例可以参考 <a href="https://github.com/electron/electron-api-demos" target="_blank" rel="noopener">electron-api-demo</a> ，其 UI 层便是充分利用了 web components 特性。</p>
+<h2 id="扩展阅读"><a href="#扩展阅读" class="headerlink" title="扩展阅读"></a>扩展阅读</h2><ul>
+<li><a href="https://www.html5rocks.com/zh/tutorials/webcomponents/imports/" target="_blank" rel="noopener">HTML Imports. by Eric Bidelman</a></li>
+</ul>
 <h2 id="单词"><a href="#单词" class="headerlink" title="单词"></a>单词</h2><ul>
 <li>interoperable<ul>
 <li>ADJ 能共同操作的，能共同使用的</li>
@@ -812,7 +827,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#web-components-的概念是怎么开始的"><span class="nav-number">1.</span> <span class="nav-text">web components 的概念是怎么开始的</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#web-components-的工具集"><span class="nav-number">2.</span> <span class="nav-text">web components 的工具集</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义元素特性"><span class="nav-number">2.1.</span> <span class="nav-text">自定义元素特性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HTML-模板特性"><span class="nav-number">2.2.</span> <span class="nav-text">HTML 模板特性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#影子-DOM-特性"><span class="nav-number">2.3.</span> <span class="nav-text">影子 DOM 特性</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Web-component-生态"><span class="nav-number">3.</span> <span class="nav-text">Web component 生态</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#获得更多相关的-web-component"><span class="nav-number">4.</span> <span class="nav-text">获得更多相关的 web component</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">5.</span> <span class="nav-text">总结</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#单词"><span class="nav-number">6.</span> <span class="nav-text">单词</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#web-components-的概念是怎么开始的"><span class="nav-number">1.</span> <span class="nav-text">web components 的概念是怎么开始的</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#web-components-的工具集"><span class="nav-number">2.</span> <span class="nav-text">web components 的工具集</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义元素特性"><span class="nav-number">2.1.</span> <span class="nav-text">自定义元素特性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HTML-模板特性"><span class="nav-number">2.2.</span> <span class="nav-text">HTML 模板特性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#影子-DOM-特性"><span class="nav-number">2.3.</span> <span class="nav-text">影子 DOM 特性</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Web-components-生态"><span class="nav-number">3.</span> <span class="nav-text">Web components 生态</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#获得更多相关的-web-components"><span class="nav-number">4.</span> <span class="nav-text">获得更多相关的 web components</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">5.</span> <span class="nav-text">总结</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#扩展阅读"><span class="nav-number">6.</span> <span class="nav-text">扩展阅读</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#单词"><span class="nav-number">7.</span> <span class="nav-text">单词</span></a></li></ol></div>
             
 
           </div>
