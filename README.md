@@ -13,5 +13,5 @@ Recently I got a big intersting to learn English, which I have researching the g
 
 ## research
 
-- [AMD - discuss how oanonymous
+- [AMD - discuss how anonymous
 definition get it's id](https://groups.google.com/forum/#!topic/commonjs/WjNY7ONeaI4)
